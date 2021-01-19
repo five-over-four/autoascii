@@ -16,4 +16,7 @@ All of these were made with a pixel size of 1 or 2. The images are screenshots f
 ## Further settings in `convert.py`
 
 ### `charset`
-`charset` is an array of characters. They correspond to the different brightness levels you have available, and can be customised to any degree. For example, if you set `charset = [" ", "@"]`, your output ASCII art will only have two brightness levels, drawn with spaces and @-symbols. It goes from light to dark.
+`charset` is an array of characters. They correspond to the different brightness levels you have available, and can be customised to any degree. For example, if you set `charset = [" ", "@"]`, your output ASCII art will only have two brightness levels, drawn with spaces and @-symbols. It goes from light to dark. You can also improve the contrast of your images by giving your charset less middle-brightness characters and sticking to bright and dark ones like ".", ",", "-", and "#", "@", "%". Experiment!
+
+## Displaying the ASCII art
+By necessity, if you use a very small pixel size and a large image, the text files may be enormous. This can make it hard to see the 'picture' in there. Additionally, some text editors lack sophisticated zooming features. I've found that Notepad++ zooms most easily, and using a theme (Settings -> Style Configurator) like 'Choco' makes the images really 'pop'. I display the text file on a large monitor and take a screeenshot. Experiment at your leisure, and tell me if you find a better way.
