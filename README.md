@@ -4,6 +4,8 @@ Using PIL, scan an image and create an ASCII replica!
 ## How to use
 When running the script, you will be prompted for a filename and pixel size. The pixel size determines exactly how many pixels correspond to one ASCII character. For instance, if you have a 400 x 400 image and set pixel size to be 5, you will get out a (400 / 5) x (400 / 5) = 80 x 80 text file.
 
+The final prompt is on 'contrast', which corresponds to the exponent used in the function `n_greyscale`. 1 will give the highest contrast images, while increasing the value decreases contrast.
+
 ## Examples (click to see full size)
 | Profile picture | A glitched guitar | Radical Edward |
 | --- | --- | --- |
@@ -15,5 +17,3 @@ All of these were made with a pixel size of 1 or 2. The images are screenshots f
 
 ### `charset`
 `charset` is an array of characters. They correspond to the different brightness levels you have available, and can be customised to any degree. For example, if you set `charset = [" ", "@"]`, your output ASCII art will only have two brightness levels, drawn with spaces and @-symbols. It goes from light to dark.
-## `n-greyscale`
-By default, the script uses a RMS (root-mean-square) function to convert the RGB value to a greyscale one. Using the function `n-greyscale`, you can get adjust the spread of greyscale values by increasing the value n (default 2).
