@@ -1,0 +1,18 @@
+## Image to ASCII (automatic ASCII art)
+Using PIL, scan an image and create an ASCII replica!
+
+## How to use
+When running the script, you will be prompted for a filename and pixel size. The pixel size determines exactly how many pixels correspond to one ASCII character. For instance, if you have a 400 x 400 image and set pixel size to be 5, you will get out a (400 / 5) x (400 / 5) = 80 x 80 text file.
+
+## Examples
+| Profile picture | A glitched guitar | Radical Edward |
+| --- | --- | --- |
+| ![woops](ownurl) | ![woops](ownurl) | ![woops](ownurl) |
+All of these were made with a pixel size of 1 or 2. Increase the value to get more pixellated images.
+
+## Further settings in `convert.py`
+
+### `charset`
+`charset` is an array of characters. They correspond to the different brightness levels you have available, and can be customised to any degree. For example, if you set `charset = [" ", "@"]`, your output ASCII art will only have two brightness levels, drawn with spaces and @-symbols. It goes from light to dark.
+## `n-greyscale`
+By default, the script uses a RMS (root-mean-square) function to convert the RGB value to a greyscale one. Using the function `n-greyscale`, you can get adjust the spread of greyscale values by increasing the value n (default 2).
