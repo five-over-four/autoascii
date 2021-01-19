@@ -7,8 +7,8 @@ When running the script, you will be prompted for a filename and pixel size. The
 ## Examples
 | Profile picture | A glitched guitar | Radical Edward |
 | --- | --- | --- |
-| ![woops](ownurl) | ![woops](ownurl) | ![woops](ownurl) |
-All of these were made with a pixel size of 1 or 2. Increase the value to get more pixellated images.
+| ![woops](https://raw.githubusercontent.com/not-legato/autoascii/main/extras/pfp_high_detail.png) | ![woops](https://raw.githubusercontent.com/not-legato/autoascii/main/extras/glitch_guitar.png) | ![woops](https://raw.githubusercontent.com/not-legato/autoascii/main/extras/ed.png) |
+All of these were made with a pixel size of 1 or 2. The images are screenshots from [Notepad++](http://notepad-plus-plus.org/). Increase the value to get more pixellated images. The glitched effect on the guitar was achieved by making one of the `charset` characters two wide, such as "`d".
 
 ## Further settings in `convert.py`
 
