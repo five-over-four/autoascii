@@ -40,16 +40,12 @@ def average_image(pixel: int, filename: str):
         rgb_chart.append(column)
     return {"rgb": rgb_chart, "width": width, "height": height}
 
-def rms_greyscale(r: int, g: int, b: int):
-    rms = sqrt(1/3 * (r**2 + g**2 + b**2) )
-    return round(rms)
-
-# higher powers increase contrast. not used by default.
 def n_greyscale(n: int, r: int, g: int, b: int):
-    power = (1/3 * (abs(r**n) + abs(g**n) + abs(b**n)) )**(1/n)
-    return round(power)
+    intensity = (1/3 * (abs(r**n) + abs(g**n) + abs(b**n)) )**(1/n)
+    return round(intensity)
 
-def make_ascii(charset: list, pixel: int, filename: str):
+# adjust the "power" value (1 or greater) to tweak the intensity levels.
+def make_ascii(charset: list, pixel: int, filename: str, power = 1):
 
     data = average_image(pixel, filename)
     rgb = data["rgb"]
@@ -63,7 +59,7 @@ def make_ascii(charset: list, pixel: int, filename: str):
         for y in range(height):
             for x in range(width):
                 entry = rgb[x][y]
-                brightness = int(round(rms_greyscale(entry[0], entry[1], entry[2]) * (LoD / 255)))
+                brightness = int(round(n_greyscale(power, entry[0], entry[1], entry[2]) * (LoD / 255)))
                 file.write(charset[brightness] + " ")
             file.write("\n")
 
@@ -76,8 +72,9 @@ if __name__ == "__main__":
     while True:
         filename = input("Enter the filename of the image to be converted\n>> ")
         pixel = input("Enter how the size of each pixel. Smaller means\na more detailed end-result.\n>> ")
+        power = input("Contrast (default 2)\n>> ")
         try:
-            make_ascii(charset, int(pixel), filename)
+            make_ascii(charset, int(pixel), filename, int(power))
             break
         except:
             print("No such file found / invalid pixel size.")
