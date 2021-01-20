@@ -20,3 +20,5 @@ All of these were made with a pixel size of 1 or 2. The images are screenshots f
 
 ## Displaying the ASCII art
 By necessity, if you use a very small pixel size and a large image, the text files may be enormous. This can make it hard to see the 'picture' in there. Additionally, some text editors lack sophisticated zooming features. I've found that Notepad++ zooms most easily, and using a theme (Settings -> Style Configurator) like 'Choco' makes the images really 'pop'. I display the text file on a large monitor and take a screeenshot. Experiment at your leisure, and tell me if you find a better way.
+
+![](https://raw.githubusercontent.com/not-legato/autoascii/main/extras/hollowknight.png)
