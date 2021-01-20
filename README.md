@@ -7,9 +7,9 @@ When running the script, you will be prompted for a filename and pixel size. The
 The final prompt is on 'contrast', which corresponds to the exponent used in the function `n_greyscale`. 1 will give the highest contrast images, while increasing the value decreases contrast.
 
 ## Examples (click to see full size)
-| Profile picture | A glitched guitar | Hollow Knight |
+| Profile picture | A glitched guitar | Radical Edward |
 | --- | --- | --- |
-| ![](https://i.imgur.com/KyenB53.png) | ![](https://i.imgur.com/SHYiQos.png) | ![](https://i.imgur.com/sypioYM.png) |
+| ![](https://i.imgur.com/KyenB53.png) | ![](https://i.imgur.com/SHYiQos.png) | ![](https://i.imgur.com/nz1pf1M.png) |
 
 All of these were made with a pixel size of 1 or 2. The images are screenshots from [Notepad++](http://notepad-plus-plus.org/). Increase the value to get more pixellated images. The glitched effect on the guitar was achieved by making one of the `charset` characters two wide, such as "`d".
 
@@ -21,4 +21,4 @@ All of these were made with a pixel size of 1 or 2. The images are screenshots f
 ## Displaying the ASCII art
 By necessity, if you use a very small pixel size and a large image, the text files may be enormous. This can make it hard to see the 'picture' in there. Additionally, some text editors lack sophisticated zooming features. I've found that Notepad++ zooms most easily, and using a theme (Settings -> Style Configurator) like 'Choco' makes the images really 'pop'. I display the text file on a large monitor and take a screeenshot. Experiment at your leisure, and tell me if you find a better way.
 
-![](https://i.imgur.com/nz1pf1M.png)
+![](https://i.imgur.com/sypioYM.png)
